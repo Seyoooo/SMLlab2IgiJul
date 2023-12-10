@@ -21,7 +21,7 @@ We also added the option to simply search a phrase on YouTube and choose how man
 
 ## 2. Possible improvements
 ### (a) Model centric approach
-An obvious improvement could be that choosing the bigger versions of Whisper could improve the quality of the transcription. Also hyperparameters such as `learning_rate`, `batch_size`, `gradient_accumulation_steps` could be manipulated to see which value provides better results. Also, set precision to 32 instead of 16 (`fp16=True`) could slightly improve performance, but would be costly in terms of model size. 
+An obvious improvement could be that choosing the bigger versions of Whisper could improve the quality of the transcription. Also hyperparameters such as `learning_rate`, `batch_size`, `gradient_accumulation_steps` could be manipulated to see which value provides better results. Setting precision to 32 instead of 16 (`fp16=True`) could slightly improve performance, but would be costly in terms of model size. 
 
 We could also modify the parameters of existing regularisation techniques such as dropout, label smoothing or level normalisation, introduced in the original [paper](https://arxiv.org/abs/1706.03762). Another possibility would be to introduce new regularisation techniques such as [DropDim](https://arxiv.org/pdf/2304.10321.pdf) where instead of disabling neurons, we hide certain dimensions of the embedding, forcing the network to produce features encodings based on incomplete semantic information. 
 
