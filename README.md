@@ -5,8 +5,13 @@
 A lab exercise to build a Machine Learning system for speech transcription in Polish. 
 ## 1. System components
 The [Colab notebook](https://colab.research.google.com/github/sanchit-gandhi/notebooks/blob/main/fine_tune_whisper.ipynb) used as a baseline has in the first phase been split into feature and training pipelines. 
+
 ### 1.1 Feature pipeline
+Following the given google collab code, this notebook import the dataset polish dataset from huggingface, resample and compute the log-Mel spectrogram of the input features, and save the processed features in google Drive. Note that in order to keep enough space on google drive for checkpointing, we used only 50% of training, 50% of validation, and 10% of test polish datasets. This notebook is running on a CPU.  
+
 ### 1.2 Training pipeline
+
+
 ### 1.3 User interface 
 The UI has been created in the form of an [app](https://huggingface.co/spaces/PiJul/PolishCarelessWhisper) on HuggingFace. 
 
