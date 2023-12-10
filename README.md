@@ -1,5 +1,6 @@
 # Polish Careless Whisper
 **Course:** Scalable Machine Learning and Deep Learning - Lab 1
+
 **Team**: Iga Pawlak, Julien Horvat
 
 A lab exercise to build a Machine Learning system for speech transcription in Polish. 
@@ -15,9 +16,16 @@ This notebook is fine-tuning the pretrained whisper small model developped and t
 ### 1.3 User interface 
 The UI has been created in the form of an [app](https://huggingface.co/spaces/PiJul/PolishCarelessWhisper) on HuggingFace. 
 
-There are a few tabs allowing the user to transcribe speech recorded from their microphone, as well as paste a link to a video on YouTube 
+There are a few tabs allowing the user to transcribe speech recorded from their microphone, as well as paste a link to a video on YouTube. Below we demonstrate an example of transcription of a short video from the link [https://www.youtube.com/shorts/L0zAF3JA7ro](https://www.youtube.com/shorts/L0zAF3JA7ro) 
 
-We also added the option to simply search a phrase on YouTube and choose how many seconds should be transcribed. 
+![obraz](https://github.com/Seyoooo/SMLlab2IgiJul/assets/36933957/f06bc6e4-99d0-4876-9c46-e83d8604d55c)
+
+We also added the option to simply search a phrase on YouTube and choose how many seconds should be transcribed. Below we can see examples of transcription for the same search phrase for 30 and 15 seconds 
+
+![obraz](https://github.com/Seyoooo/SMLlab2IgiJul/assets/36933957/61529206-d215-4ddc-9597-c3d0e56d1bb9)
+
+![obraz](https://github.com/Seyoooo/SMLlab2IgiJul/assets/36933957/8509db41-9098-40a6-8ba6-a4b772935eb4)
+
 
 ## 2. Possible improvements
 ### (a) Model centric approach
@@ -28,4 +36,4 @@ We could also modify the parameters of existing regularisation techniques such a
 ### (b) Data centric approach
 
 There are existing datasets with a bigger number of samples such as [this one](https://doi.org/10.35111/twqh-f096). There are also domain-specific datasets that might prove very useful for fine-tuning transcription for a task with very specialised language, such as medical applications (example [dataset](https://www.futurebeeai.com/dataset/monologue-speech-dataset/healthcare-scripted-speech-monologues-polish-poland)). 
-Some data augmentation techniques could also be used to increase the dataset. This [blog](https://towardsdatascience.com/data-augmentation-for-speech-recognition-e7c607482e78) introduce some for speech recognition. 
+Some data augmentation techniques could also be used to increase the dataset. This [blog](https://towardsdatascience.com/data-augmentation-for-speech-recognition-e7c607482e78) introduces some for speech recognition. 
